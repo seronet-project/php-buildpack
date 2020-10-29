@@ -214,7 +214,8 @@ class ComposerExtension(ExtensionHelper):
                 .done())
 
     def install(self):
-        self._builder.install().package('PHP').done()
+#self._builder.install().package('PHP').done()
+
         if self._ctx['COMPOSER_VERSION'] == 'latest':
             dependencies_path = os.path.join(self._ctx['BP_DIR'],
                                              'dependencies')
