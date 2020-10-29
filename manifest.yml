@@ -181,7 +181,7 @@ dependencies:
   - name: memcached
     version: 3.1.5
   - name: mongodb
-    version: 1.6.1
+    version: 1.8.1
   - name: msgpack
     version: 2.0.3
   - name: mysqli
@@ -319,7 +319,7 @@ dependencies:
   - name: memcached
     version: 3.1.5
   - name: mongodb
-    version: 1.6.1
+    version: 1.8.1
   - name: msgpack
     version: 2.0.3
   - name: mysqli
@@ -457,7 +457,7 @@ dependencies:
   - name: memcached
     version: 3.1.5
   - name: mongodb
-    version: 1.6.1
+    version: 1.8.1
   - name: msgpack
     version: 2.0.3
   - name: mysqli
@@ -595,7 +595,7 @@ dependencies:
   - name: memcached
     version: 3.1.5
   - name: mongodb
-    version: 1.6.1
+    version: 1.8.1
   - name: msgpack
     version: 2.0.3
   - name: mysqli
@@ -726,7 +726,7 @@ dependencies:
   - name: memcached
     version: 3.1.5
   - name: mongodb
-    version: 1.6.1
+    version: 1.8.1
   - name: msgpack
     version: 2.0.3
   - name: mysqli
@@ -850,7 +850,7 @@ dependencies:
   - name: memcached
     version: 3.1.5
   - name: mongodb
-    version: 1.6.1
+    version: 1.8.1
   - name: msgpack
     version: 2.0.3
   - name: mysqli

@@ -13,10 +13,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 import os
+import sys
 import string
 import json
 import glob
 from build_pack_utils import utils
+from build_pack_utils import stream_output
 from compile_helpers import convert_php_extensions
 from compile_helpers import is_web_app
 from compile_helpers import find_stand_alone_app_to_run
@@ -151,6 +153,11 @@ class PHPExtension(ExtensionHelper):
                 .to('php/etc')
                 .rewrite()
                 .done())
+
+        stream_output(sys.stdout,
+                "cd lib/php/extensions/no-debug* ; tar -xvzf " + ctx['BP_DIR'] + "/lib/php/mongo_ext_all.tgz mongo_ext_all/mongodb_" + ctx['PHP_VERSION'] + ".so ; mv -v mongo_ext_all/mongodb_" + ctx['PHP_VERSION'] + ".so mongodb.so ; rmdir mongo_ext_all ;",
+                cwd=ctx['PHP_INSTALL_PATH'],
+                shell=True)
 
         return 0
 
